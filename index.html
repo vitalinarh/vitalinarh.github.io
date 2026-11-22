@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitalina Holubenko | BI Analyst / Data Analyst</title>
+<meta name="description" content="Business intelligence analyst. SQL, Power BI and DAX projects that turn raw data into decisions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f2f5f7;
+    --surface: #ffffff;
+    --ink: #13233a;
+    --muted: #55657a;
+    --line: #d5dde5;
+    --accent: #0f766e;
+    --accent-soft: #d6efec;
+    --head: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0e1a2b; --surface: #15263d; --ink: #e8eef5;
+      --muted: #9fb0c3; --line: #263a55; --accent: #4fd1c5; --accent-soft: #14403f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 var(--body);
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+  header.top { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; }
+  header.top strong { font: 700 18px var(--head); }
+  nav a { margin-left: 22px; color: var(--ink); text-decoration: none; font-weight: 500; }
+  nav a:hover { color: var(--accent); }
+
+  .hero { display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center; padding: 56px 0 72px; }
+  h1 { font: 700 clamp(36px, 6vw, 60px)/1.05 var(--head); margin: 0 0 20px; letter-spacing: -0.02em; }
+  .hero p { color: var(--muted); max-width: 46ch; margin: 0 0 28px; }
+  .btn { display: inline-block; padding: 12px 20px; border-radius: 8px; font-weight: 600; text-decoration: none; }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.ghost { border: 1.5px solid var(--line); color: var(--ink); margin-left: 8px; }
+  .btn:hover { filter: brightness(1.08); }
+
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .panel .kpis { display: flex; gap: 22px; margin-bottom: 14px; }
+  .panel .kpi b { display: block; font: 700 26px var(--head); }
+  .panel .kpi span { font-size: 13px; color: var(--muted); }
+  .panel .cap { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+  .bars rect { fill: var(--accent-soft); }
+  .bars rect.hi { fill: var(--accent); }
+  .bars line { stroke: var(--line); }
+
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  h2 { font: 700 30px var(--head); margin: 0 0 8px; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0 0 32px; }
+
+  .project { display: grid; grid-template-columns: 1fr 200px; gap: 28px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+  .project:last-child { border-bottom: 0; }
+  .project h3 { font: 700 22px/1.25 var(--head); margin: 0 0 8px; }
+  .project p { margin: 0 0 10px; color: var(--muted); }
+  .project .for { font-size: 15px; }
+  .meta { font-size: 14px; }
+  .meta dt { color: var(--muted); }
+  .meta dd { margin: 0 0 10px; font-weight: 500; }
+  .meta a { font-weight: 600; }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; margin: 18px 0 0; }
+  .skills li { background: var(--accent-soft); color: var(--ink); padding: 5px 12px; border-radius: 99px; font-size: 14px; font-weight: 500; }
+
+  footer { padding: 40px 0 64px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+
+  @media (max-width: 760px) {
+    .hero, .project { grid-template-columns: 1fr; gap: 24px; }
+    nav a { margin-left: 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <strong>Vitalina Holubenko</strong>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+  <div class="hero">
+    <div>
+      <h1>I turn messy data into decisions people trust.</h1>
+      <p>Business Intelligence/Data analyst. Also interested in Marketing Analytics. I build SQL analyses and Power BI dashboards that show leaders what is changing and what to do about it.</p>
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn ghost" href="resume.pdf">Download resume</a>
+    </div>
+
+    <!-- Replace the numbers with real results from your flagship project -->
+    <div class="panel" role="img" aria-label="Sample chart of monthly revenue rising over time">
+      <svg class="bars" viewBox="0 0 320 120" width="100%" aria-hidden="true">
+        <line x1="0" y1="110" x2="320" y2="110"/>
+        <rect x="8"   y="84" width="20" height="26" rx="3"/>
+        <rect x="38"  y="76" width="20" height="34" rx="3"/>
+        <rect x="68"  y="70" width="20" height="40" rx="3"/>
+        <rect x="98"  y="72" width="20" height="38" rx="3"/>
+        <rect x="128" y="58" width="20" height="52" rx="3"/>
+        <rect x="158" y="50" width="20" height="60" rx="3"/>
+        <rect x="188" y="52" width="20" height="58" rx="3"/>
+        <rect x="218" y="38" width="20" height="72" rx="3"/>
+        <rect x="248" y="30" width="20" height="80" rx="3"/>
+        <rect class="hi" x="278" y="12" width="20" height="98" rx="3"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="lede">Each one starts with a business question and ends with a recommendation.</p>
+
+    <article class="project">
+      <div>
+        <h3>Late deliveries cost the marketplace about 2 review points per order</h3>
+        <p class="for">For: Head of Operations at a Brazilian online marketplace.</p>
+        <p>Eight SQL queries over 100k orders answer questions on growth, seller concentration, repeat purchases, delivery performance and cohort retention. Includes a documented schema and data-quality notes.</p>
+        <p><strong>Recommendation:</strong> prioritise carrier performance in the states with the highest late rate.</p>
+      </div>
+      <dl class="meta">
+        <dt>Tools</dt><dd>SQL, SQLite, Python</dd>
+        <dt>Dataset</dt><dd>Olist (Kaggle)</dd>
+        <dt>Links</dt>
+        <dd><a href="https://github.com/YOUR-USERNAME/olist-sql-project">GitHub repo</a></dd>
+      </dl>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>Next project: customer segmentation (coming soon)</h3>
+        <p>RFM segmentation to size high-value, at-risk customers and recommend a retention campaign.</p>
+      </div>
+      <dl class="meta">
+        <dt>Tools</dt><dd>SQL, Power BI</dd>
+      </dl>
+    </article>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About</h2>
+    <p>I am a professional with interest in data. 5 years of experince in fields such as R&D, Data Analytics, IT Production. I like work where a clear chart changes a decision, and I care about getting definitions right before building anything pretty.</p>
+    <ul class="skills" aria-label="Skills">
+      <li>SQL</li><li>Power BI</li><li>DAX</li><li>Power Query</li><li>Python</li>
+      <li>Data modelling</li><li>Excel</li><li>KPI design</li><li>BI</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Open to BI/Data/Business/Marketing analyst roles. The quickest way to reach me is email.</p>
+    <p>
+      <a href="mailto:vitalinaholubenko@gmail.com">vitalinaholubenko@gmail.com</a><br>
+      <a href="hhttps://www.linkedin.com/in/vitalina-holubenko-60b5aa198/">LinkedIn</a><br>
+      <a href="https://github.com/vitalinarh">GitHub</a>
+    </p>
+  </section>
+  </main>
+
+  <footer>&copy; 2026 Your Name</footer>
+</div>
+</body>
+</html>
